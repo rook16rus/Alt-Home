@@ -159,7 +159,7 @@
                     <h2 class="section-title feedback-title">Мы свяжемся с вами</h2>
                 </header>
                 <form method="post" class="feedback-form">
-                    <fieldset class="greeting">
+                    <fieldset class="feedback-greeting">
                         <label for="feedback-greeting">Обращение</label>
                         <select class="field" name="feedback-greeting" id="feedback-greeting">
                             <option value="Мистер" selected>Мистер</option>
@@ -182,10 +182,12 @@
                         <label for="feedback-phone">Телефон</label>
                         <input type="text" class="field" name="feeback-phone" id="feedback-phone" placeholder="+7 999 999-99-99">
                     </fieldset>
-                    <fieldset class="feedback-checkboxes">
-                        <input type="checkbox" name="subscribe" id="feedback-confidence">
+                    <fieldset class="feedback-policy">
+                        <input type="checkbox" class="visually-hidden" name="subscribe" id="feedback-confidence">
                         <label for="feedback-confidence">Согласие на обработку персональных данных</label>
-                        <input type="checkbox" name="subscribe" id="feedback-subscribe">
+                    </fieldset>
+                    <fieldset class="feedback-subscribe">
+                        <input type="checkbox" class="visually-hidden" name="subscribe" id="feedback-subscribe">
                         <label for="feedback-subscribe">Подписка на рассылку</label>
                     </fieldset>
                     <div class="feedback-button-wrapper">
