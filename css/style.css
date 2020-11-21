@@ -31,6 +31,43 @@ body {
     line-height: 48px;
 }
 
+.section-num {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #06A9B3;
+
+    margin: 0 0 60px 117px;
+    position: relative;
+}
+
+.section-num::before {
+    content: "";
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #06A9B3;
+
+    position: absolute;
+    top: 50%;
+    left: -117px;
+    transform: translateY(-50%);
+}
+
+.section-num::after {
+    content: "";
+
+    width: 84px;
+    height: 0;
+    border-top: 1px solid #06A9B3;
+
+    position: absolute;
+    top: 50%;
+    left: -92px;
+    transform: translateY(-50%);
+}
+
 .button {
     display: inline-block;
     padding: 16px 32px;
@@ -277,4 +314,100 @@ button.button-next {
     letter-spacing: -0.13em;
     text-align: right;
     color: #fff;
+}
+
+.perchance {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0 24px;
+
+    padding-top: 100px;
+    position: relative;
+}
+
+.perchance::before {
+    content: "01";
+
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    color: #EAF2F6;
+
+    position: absolute;
+    left: 147px;
+    top: 100px;
+}
+
+.perchance::after {
+    content: "Место";
+
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    color: #EAF2F6;
+
+    position: absolute;
+    transform: rotate(-90deg)  translate(-280px, 69px);
+}
+
+.perchance header {
+    grid-column: 5/9;
+}
+
+.perchance .section-num::before {
+    content: "01";
+}
+
+.perchance-content {
+    grid-column: 1/-1;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0 24px;
+}
+
+.perchance-text {
+    grid-column: 5/9;
+}
+
+.perchance-content img {
+    grid-column: 5/9;
+}
+
+.aside-right-text {
+    grid-column: 10/12;
+
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.aside-left-text {
+    grid-column: 2/4;
+
+    font-size: 14px;
+    line-height: 24px;
+}
+
+img.big-pic {
+    grid-column: 2/-2;
+
+    margin: 24px 0;
+}
+
+.perchance-content q {
+    grid-column: 4/10;
+
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 40px;
+
+    padding-left: 30px;
+    border-left: 2px solid #06A9B3;
+}
+
+.perchance-button-wrapper {
+    grid-column: 5/8;
+
+    margin-top: 20px;
 }
